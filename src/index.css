@@ -16,3 +16,10 @@ code {
   font-size: 32px;
   color: blue;
 }
+
+.card {
+  border: 1px black solid;
+  padding: 32px;
+  color: blue;
+  width: 20vw;
+}

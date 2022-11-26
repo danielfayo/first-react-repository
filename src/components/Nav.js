@@ -12,6 +12,7 @@ function Nav(prop){
                 <li>About {prop.name}</li>
                 <li>Contact {prop.name}</li>
                 <li>{prop.name}</li>
+                <li>he is {prop.age}</li>
                 <li>{desi}</li>
                 <li>{randomNum()}</li>
             </ul>

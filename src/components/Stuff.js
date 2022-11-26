@@ -1,5 +1,3 @@
-// import './index.css'
-
 function Stuff(prop){
     return(
         <div className = 'bag'>
