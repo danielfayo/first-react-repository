@@ -1,8 +1,6 @@
 function Stuff(prop){
     return(
-        <div className = 'bag'>
-            {prop.children}
-        </div>
+        prop.inputNum * 2
     )
 }
 

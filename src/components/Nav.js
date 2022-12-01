@@ -3,20 +3,16 @@ let randomNum = () => {
     return Math.floor(Math.random() * 10);
 }
 
-function Nav(prop){
+let data = {
+    heading: '90% off',
+    text: 'Everything must go'
+}
+
+function Nav(children){
     return(
-        <nav className='main-nav'>
-            <ul>
-                <li>Home</li>
-                <li>Articles {prop.name}</li>
-                <li>About {prop.name}</li>
-                <li>Contact {prop.name}</li>
-                <li>{prop.name}</li>
-                <li>he is {prop.age}</li>
-                <li>{desi}</li>
-                <li>{randomNum()}</li>
-            </ul>
-        </nav>
+        <>
+            <input type='number' onChange={(e) => children(e.target.value)} />
+        </>
     );
 };
 

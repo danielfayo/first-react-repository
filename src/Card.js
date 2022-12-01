@@ -1,10 +1,16 @@
-let Card = (props) => {
+import Stuff from './components/Stuff'
+
+let Input = ({children}) => {
     return(
-        <div className = 'card'>
+        <>
+        {children}
+        </>
+
+        /*<div className = 'card'>
             <h2>{props.h2}</h2>
             <h3>{props.h3}</h3>
-        </div>
+        </div>*/
     );
 };
 
-export default Card;
+export default Input;

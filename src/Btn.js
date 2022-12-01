@@ -1,15 +1,23 @@
+import React, { useState } from "react";
+
 function Btn(){
-    let isDarkMode = false;
-    const clickHandler = () => {
-        isDarkMode = !isDarkMode
-        isDarkMode ? console.log("Dark Mode") : console.log("Light Mode");
+    const [form, setForm] = useState({ 
+        firstName: 'Luke', 
+        lastName: 'Jones', 
+        email: 'lukeJones@sculpture.com', 
+    });
+    function handleEvent(e){
+        setForm({ 
+            ...form, 
+            firstName: e.target.value 
+            }); 
     }
     return(
-        <button onClick={clickHandler}>
-            Button
-        </button>
+        <label>First Name: 
+            <input value={form.firstName} 
+            onChange={handleEvent} />
+        </label>
     );
 };
-
 
 export default Btn;
